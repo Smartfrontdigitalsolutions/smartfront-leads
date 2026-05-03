@@ -1,0 +1,19 @@
+{
+  "name": "smartfront-lead-scraper-no-ghl",
+  "version": "1.0.0",
+  "description": "Railway-ready automated lead scraper and qualifier for SmartFront Digital Solutions. No GoHighLevel.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "run:websites": "node index.js websites",
+    "run:ai": "node index.js ai",
+    "run:reviews": "node index.js reviews",
+    "run:all": "node index.js all"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "googleapis": "^144.0.0",
+    "node-cron": "^3.0.3"
+  }
+}
