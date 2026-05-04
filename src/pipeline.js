@@ -21,12 +21,12 @@ async function runPipeline(pipeline) {
     console.log(`Scraping: ${query}`);
 
     let places = [];
-    try {
-      places = await scrapeGoogleMaps(query, 25);
-    } catch (err) {
-      console.error(`Scrape failed for ${query}:`, err.message);
-      continue;
-    }
+try {
+  places = await scrapeGoogleMaps(query, 100);
+} catch (err) {
+  console.error(`Scrape failed for ${query}:`, err.message);
+  continue;
+}
 
     for (const place of places) {
       if (saved >= MIN_LEADS) break;
